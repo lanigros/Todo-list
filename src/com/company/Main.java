@@ -9,16 +9,18 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         ArrayList<String> todoList = new ArrayList<String>();
-        System.out.println("What would you like to do?" +
-                "\nA) Add item" + "\nB) Remove item" + "\nC) Clear list" + "\nQ) Quit" );
 
-        String menuChoice = input.nextLine();
+        System.out.println("-".repeat(25));
+        System.out.println("Welcome to you todo-list!");
+        System.out.println("-".repeat(25));
 
-        if (menuChoice.equalsIgnoreCase("a")){
-            System.out.println("What item would you like to add?");
-            arrAdd = input.nextLine();
-            todoList.add
-        }
+        menu();
 
     }
+        public static void menu(){
+            System.out.println("\nWhat would you like to do?");
+            System.out.println("\nA) Add item" + "\nB) Remove item" + "\nC) Clear all" +
+                    "\nQ) Quit");
+        }
 }
+
